@@ -1,0 +1,271 @@
+<!-- ================================================================
+    Student ID  : 25531270
+    Name        : WANG JIEYI
+    Date        : 2025-09-29
+    Assignment  : Adidas Homepage Replica (Bootstrap)
+================================================================ -->
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adidas - Homepage</title>
+    <!-- Bootstrap CSS（Official Website Quick Start copy） -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <!-- Bootstrap Icons -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+</head>
+<body>
+
+    <!-- Promo bar: auto-rotating text carousel at top -->
+    <div id="promoCarousel" class="carousel slide bg-black text-white text-center py-2 small" data-bs-ride="carousel" data-bs-interval="2000">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                FREE SHIPPING
+            </div>
+            <div class="carousel-item">
+                Become an adiClub member
+            </div>
+            <div class="carousel-item">
+                ADIDAS APP
+            </div>
+        </div>
+    </div>
+    <!-- End of promo bar -->
+
+
+    <!-- ========== 1. Top navigation bar: white navbar with Bootstrap Icons ========== -->
+<nav class="navbar navbar-expand-lg bg-white border-bottom">
+    <div class="container-fluid">
+
+        <!-- Left: hamburger + wishlist icons -->
+        <div class="d-flex align-items-center">
+            <button class="btn border-0 me-2" type="button">
+                <i class="bi bi-list fs-4"></i>
+            </button>
+            <button class="btn border-0" type="button">
+                <i class="bi bi-heart fs-5"></i>
+            </button>
+        </div>
+
+        <!-- Center: brand name -->
+        <a class="navbar-brand fw-bold position-absolute start-50 translate-middle-x" href="#">adidas</a>
+
+        <!-- Right: user, search, cart icons -->
+        <div class="d-flex align-items-center ms-auto">
+            <button class="btn border-0 me-2" type="button">
+                <i class="bi bi-person fs-5"></i>
+            </button>
+            <button class="btn border-0 me-2" type="button">
+                <i class="bi bi-search fs-5"></i>
+            </button>
+            <button class="btn border-0 position-relative" type="button">
+                <i class="bi bi-bag fs-5"></i>
+                <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-dark">0</span>
+            </button>
+        </div>
+
+    </div>
+</nav>
+<!-- ========== End of navigation bar ========== -->
+<!-- ========== 2. Hero Banner（Copy from the official website: Components → Carousel.） ========== -->
+<div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+
+        <!-- Second image (optional, for the carousel) -->
+        <div class="carousel-item active">
+            <img src="https://picsum.photos/1920/600?random=1"  
+                 class="d-block w-100" alt="Hero Banner">
+            <div class="carousel-caption d-none d-md-block">
+                <h1 class="display-4 fw-bold">NEW ARRIVALS</h1>
+                <p class="lead">Discover the latest drops</p>
+                <a href="#" class="btn btn-light btn-lg">SHOP NOW</a>
+            </div>
+        </div>
+
+        <!-- Second image (optional, for the carousel) -->
+        <div class="carousel-item">
+            <img src="https://picsum.photos/1920/600?random=2"  
+                 class="d-block w-100" alt="Summer Sale">
+            <div class="carousel-caption d-none d-md-block">
+                <h1 class="display-4 fw-bold">SUMMER SALE</h1>
+                <p class="lead">Up to 50% off</p>
+                <a href="#" class="btn btn-light btn-lg">SHOP SALE</a>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Left and right arrows -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+    </button>
+</div>
+<!-- ========== Hero Banner End ========== -->
+
+ <!-- ========== 3. Product Card Section (Grid + Card combination) ========== -->
+<div class="container mt-5 mb-3">
+    <p class="text-muted mb-1 small">Buy 2, get 20% off</p>
+    <div class="d-flex justify-content-between align-items-center">
+        <h2 class="fw-bold mb-0">
+            Buy 2, get 20% off
+            <span class="text-muted fs-6 fw-normal">(826)</span>
+        </h2>
+        <button class="btn btn-outline-dark">
+            Filter and Sort
+        </button>
+    </div>
+</div>
+
+
+<!-- ========== Category tabs ========== -->
+<div class="container mb-4">
+    <ul class="nav">
+        <li class="nav-item"><a class="nav-link text-dark fw-bold" href="#">Buy 2, get 20% off</a></li>
+        <li class="nav-item"><a class="nav-link text-muted" href="#">Men</a></li>
+        <li class="nav-item"><a class="nav-link text-muted" href="#">Women</a></li>
+        <li class="nav-item"><a class="nav-link text-muted" href="#">Kids</a></li>
+    </ul>
+</div>
+
+
+<!-- ========== Product grid ========== -->
+<div class="container mb-5">
+
+    <!-- row Represents a single line containing multiple items. col -->
+    <div class="row">
+
+        <!-- Product 1: clickable card -->
+        <div class="col-6 col-md-3 mb-4">
+            <a href="#" class="card h-100 text-decoration-none text-dark">
+                <img src="https://assets.adidas.com/images/w_450,f_auto,q_auto/6c1e50a791d64ac4b3e8e96029a11387_9366/KX3047_02_laydown_hover.jpg" 
+                     class="card-img-top" alt="Product 1">
+                <div class="card-body px-0">
+                    <p class="fw-bold mb-1">Ultraboost 22</p>
+                    <p class="fw-bold mb-1">HKD 999.00</p>
+                    <p class="text-muted small mb-1">Original</p>
+                    <p class="text-danger small mb-0">Hot sale · Buy 2, get 20% off</p>
+                </div>
+            </a>
+        </div>
+
+        <!-- Product 2: clickable card -->
+        <div class="col-6 col-md-3 mb-4">
+            <a href="#" class="card h-100 text-decoration-none text-dark">
+                <img src="https://assets.adidas.com/images/w_450,f_auto,q_auto/234d3c87576849cd994012798517a98b_9366/KZ0510_02_laydown_hover.jpg" 
+                     class="card-img-top" alt="Product 2">
+                <div class="card-body px-0">
+                    <p class="fw-bold mb-1">Superstar</p>
+                    <p class="fw-bold mb-1">HKD 1099.00</p>
+                    <p class="text-muted small mb-1">Men's Originals</p>
+                    <p class="text-danger small mb-0">New · Buy 2, get 20% off</p>
+                </div>
+            </a>
+        </div>
+
+        <!-- Product 3: clickable card -->
+        <div class="col-6 col-md-3 mb-4">
+            <a href="#" class="card h-100 text-decoration-none text-dark">
+                <img src="https://assets.adidas.com/images/w_450,f_auto,q_auto/bede5fc31eb0401092af6603731d4e80_9366/LF1183_02_laydown_hover.jpg" 
+                     class="card-img-top" alt="Product 3">
+                <div class="card-body px-0">
+                    <p class="fw-bold mb-1">Stan Smith</p>
+                    <p class="fw-bold mb-1">HKD 759.00</p>
+                    <p class="text-muted small mb-1">Sportswear</p>
+                    <p class="text-danger small mb-0">New · Buy 2, get 20% off</p>
+                </div>
+            </a>
+        </div>
+
+        <!-- Product 4: clickable card -->
+        <div class="col-6 col-md-3 mb-4">
+            <a href="#" class="card h-100 text-decoration-none text-dark">
+                <img src="https://assets.adidas.com/images/w_450,f_auto,q_auto/7a8508f6849c42fb96e2f405dc01d849_9366/LE9674_23_hover_model.jpg" 
+                     class="card-img-top" alt="Product 4">
+                <div class="card-body px-0">
+                    <p class="fw-bold mb-1">NMD R1</p>
+                    <p class="fw-bold mb-1">HKD 1099.00</p>
+                    <p class="text-muted small mb-1">Original</p>
+                    <p class="text-danger small mb-0">New · Buy 2, get 20% off</p>
+                </div>
+            </a>
+        </div>
+
+    </div>
+</div>
+<!-- ========== End of product card section ========== -->
+
+<!-- ========== 4. Promotion Section (Grid two-column) ========== -->
+<div class="container my-5">
+    <div class="row">
+
+        <div class="col-md-6 mb-4">
+            <div class="card">
+                <img src="https://picsum.photos/600/400?random=10" class="card-img-top" alt="Men's Sale">
+                <div class="card-body text-center">
+                    <h3>MEN'S SALE</h3>
+                    <p>Up to 50% off</p>
+                    <a href="#" class="btn btn-dark">SHOP NOW</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6 mb-4">
+            <div class="card">
+                <img src="https://picsum.photos/600/400?random=11" class="card-img-top" alt="Women's Sale">
+                <div class="card-body text-center">
+                    <h3>WOMEN'S SALE</h3>
+                    <p>Up to 50% off</p>
+                    <a href="#" class="btn btn-dark">SHOP NOW</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+<!-- ========== End of promotion section ========== -->
+
+
+<!-- ========== 5. Footer (Grid three-column) ========== -->
+<footer class="bg-dark text-white py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 mb-3">
+                <h5>Products</h5>
+                <ul class="list-unstyled">
+                    <li><a href="#" class="text-secondary text-decoration-none">Shoes</a></li>
+                    <li><a href="#" class="text-secondary text-decoration-none">Clothing</a></li>
+                    <li><a href="#" class="text-secondary text-decoration-none">Accessories</a></li>
+                </ul>
+            </div>
+            <div class="col-md-4 mb-3">
+                <h5>Support</h5>
+                <ul class="list-unstyled">
+                    <li><a href="#" class="text-secondary text-decoration-none">Help</a></li>
+                    <li><a href="#" class="text-secondary text-decoration-none">Returns</a></li>
+                    <li><a href="#" class="text-secondary text-decoration-none">Shipping</a></li>
+                </ul>
+            </div>
+            <div class="col-md-4 mb-3">
+                <h5>Company</h5>
+                <ul class="list-unstyled">
+                    <li><a href="#" class="text-secondary text-decoration-none">About</a></li>
+                    <li><a href="#" class="text-secondary text-decoration-none">Careers</a></li>
+                    <li><a href="#" class="text-secondary text-decoration-none">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+        <hr class="my-4">
+        <p class="text-center text-secondary mb-0">© 2025 Adidas Clone. For educational purposes only.</p>
+    </div>
+</footer>
+<!-- ========== End of footer ========== -->
+
+
+    <!-- Bootstrap JS（Official Website Quick Start Copy and place </body> Front） -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>
